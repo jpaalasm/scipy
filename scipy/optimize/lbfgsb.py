@@ -175,7 +175,7 @@ def fmin_l_bfgs_b(func, x0, fprime=None, args=(),
     x = array(x0, float64)
     f = array(0.0, float64)
     g = zeros((n,), float64)
-    wa = zeros(2*m*n+4*n + 12*m**2 + 12*m, float64)
+    wa = zeros(2*m*n + 5*n + 11*m*m + 8*m, float64)
     iwa = zeros(3*n, int32)
     task = zeros(1, 'S60')
     csave = zeros(1,'S60')
